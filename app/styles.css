@@ -549,13 +549,17 @@ img {
 .entry-title span:before,
 .section-title span:after,
 .entry-title span:after {
-  content: "";
+  content: "  ";
   position: absolute;
   height: 4px;
   top: .53em;
   width: 400%;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
+  /*
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  */
 }
 .section-title span:before,
 .entry-title span:before {
