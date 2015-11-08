@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Epic Math</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="home">
+
+<header id="header">
+  <div id="head" class="parallax" parallax-speed="2">
+    <h1 id="logo" class="text-center">
+      <span class="title">Epic Math</span>
+      <img class="img-circle" src="khong.jpg" alt="">
+      <span class="name">K Hong</span>
+      <span class="tagline">A math lover<br>
+        <a href="">epicmath2015@aol.com</a></span>
+    </h1>
+  </div>
+
+  <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      
+      <div class="navbar-collapse collapse">
+        
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/home">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#/view1">View 1</a></li>
+              <li><a href="#/view2">View 2</a></li>
+              <li><a href="#/view3">View 3</a></li>
+            </ul>
+          </li>
+          <li><a href="http://www.bogotobogo.com">Blog</a></li>
+        </ul>      
+      </div>
+    </div>  
+  </nav>  
+</header>
+
+  <!--
+  <ul class="menu">
+    <li><a href="#/home">home</a></li>
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
+  -->
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+<main id="main">
+
+  <div class="container">
+    
+    <div class="row section topspace">
+      <div class="col-md-12">
+        <p class="lead text-center text-muted">"Do not worry too much about your difficulties in mathematics, I can assure you that mine are still greater." - Albert Einstein. </p>
+      </div>
+    </div> 
+
+    <div class="row section featured topspace">
+      <h2 class="section-title"><span>Fun Math</span></h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h3 class="text-center">Not taught in school</h3>
+          <p>Basic math concepts Not Taught In School.</p>
+          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <h3 class="text-center">Side story</h3>
+          <p>Plenty of episodes. </p>
+          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <h3 class="text-center">SAT</h3>
+          <p>Practice and practice</p>
+          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+        </div>
+      </div>
+    </div> <!-- / section -->
+
+  </div>
+</main>
+
+  <div ng-view></div>
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 widget">
+        <h3 class="widget-title">Contact</h3>
+        <div class="widget-body">
+          <p>Epic Math<br>
+            <a href="mailto:#">contact@epicmath.com</a><br>
+            <br>
+            Golden Gate Ave, San Francisco, CA 94115
+          </p>  
+        </div>
+      </div>
+
+      <div class="col-md-3 widget">
+        <h3 class="widget-title">Follow Epic Math</h3>
+        <div class="widget-body">
+          <p class="follow-me-icons">
+            <a href=""><i class="fa fa-twitter fa-2"></i></a>
+            <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+            <a href=""><i class="fa fa-github fa-2"></i></a>
+            <a href=""><i class="fa fa-facebook fa-2"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 widget">
+        <h3 class="widget-title">Hidden Gems</h3>
+        <div class="widget-body">
+          <p class="text-center"><a href="" class="btn btn-action">Subscribe</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 widget">
+        <h3 class="widget-title">About Us</h3>
+        <div class="widget-body">
+          <p>Epic Math<br>
+            <a href="mailto:#">contact@epicmath.com</a><br>
+            <br>
+            Golden Gate Ave, San Francisco, CA 94115
+          </p>  
+        </div>
+      </div>
+
+    </div> 
+  </div>
+</footer>
+
+<footer id="underfooter">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6 widget">
+        <div class="widget-body">
+          <p>Golden Gate Ave, San Francisco, CA 94115 </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 widget">
+        <div class="widget-body">
+          <p class="text-right">
+            Copyright &copy; 2015, EpicMath<br> 
+            Design: <a href="http://www.epicmath.com" rel="designer">Web Master</a> </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+
+
+ <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="js/template.js"></script> 
+
+</body>
+</html>
