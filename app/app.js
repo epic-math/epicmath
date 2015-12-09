@@ -6,8 +6,10 @@ angular.module('myApp', [
   'myApp.home',
   'myApp.view1',
   'myApp.view2',
+  'myApp.nottaught',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider
+    .otherwise({redirectTo: '/home'});
 }]);

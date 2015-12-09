@@ -1,16 +1,16 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.nottaught', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+  $routeProvider.when('/nottaught', {
+    templateUrl: 'nottaught/nottaught.html',
+    controller: 'NottaughtCtrl'
   });
 }])
 
 
-.controller('View1Ctrl', [ '$scope', function($scope) {
+.controller('NottaughtCtrl', [ '$scope', function($scope) {
   $scope.name = '';
   $scope.names = [{name:"Epic"}, {name:"Math"}];
   $scope.addName = function() {

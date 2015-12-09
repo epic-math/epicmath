@@ -37,6 +37,7 @@
     </h1>
   </div>
 
+
   <nav class="navbar navbar-default navbar-sticky">
     <div class="container-fluid">
       
@@ -60,8 +61,10 @@
           <li><a href="http://www.bogotobogo.com">Blog</a></li>
         </ul>      
       </div>
+
     </div>  
   </nav>  
+
 </header>
 
   <!--
@@ -80,7 +83,14 @@
 <main id="main">
 
   <div class="container">
-    
+
+    <div class="row section featured topspace">
+       <h2 class="section-title"></h2>
+       <div ng-view>
+
+       </div> 
+    </div>
+
     <div class="row section topspace">
       <div class="col-md-12">
         <p class="lead text-center text-muted">"Do not worry too much about your difficulties in mathematics, I can assure you that mine are still greater." - Albert Einstein. </p>
@@ -93,7 +103,7 @@
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">Not taught in school</h3>
           <p>Basic math concepts Not Taught in School.</p>
-          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+          <p class="text-center"><a href="#/nottaught" class="btn btn-action">Read more 1 *** </a></p>
         </div>
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">Side story</h3>
@@ -113,12 +123,8 @@
       </div>
     </div> <!-- / section -->
 
-    <div class="row section featured topspace">
-       <h2 class="section-title"><span>MAIN</span></h2>
-       <div ng-view>
 
-       </div> 
-    </div>
+
   </div>
 </main>
 
@@ -207,6 +213,7 @@
   <script src="home/home.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
+  <script src="nottaught/nottaught.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
