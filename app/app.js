@@ -4,10 +4,13 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.home',
-  'myApp.view1',
-  'myApp.view2',
+  'myApp.views.view1',
+  'myApp.views.view2',
+  'myApp.views.view3',
+
   'myApp.nottaught',
   'myApp.views.sidestory',
+  'myApp.views.sat',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
