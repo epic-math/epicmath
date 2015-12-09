@@ -1,17 +1,17 @@
 'use strict';
 
-angular.module('myApp.nottaught', ['ngRoute'])
+angular.module('myApp.views.sidestory', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/nottaught', {
-      templateUrl: 'nottaught/nottaught.html',
-      controller: 'NottaughtCtrl'
+    .when('/sidestory', {
+      templateUrl: '/views/sidestory/sidestory.html',
+      controller: 'SidestoryCtrl'
   });
 }])
 
 
-.controller('NottaughtCtrl', [ '$scope', function($scope) {
+.controller('SidestoryCtrl', [ '$scope', function($scope) {
   $scope.name = '';
   $scope.names = [{name:"Epic"}, {name:"Math"}];
   $scope.addName = function() {
