@@ -1,15 +1,16 @@
 'use strict';
 
-angular.module('myApp.views.cmath', ['ngRoute'])
+var app = angular.module('myApp.views.cmath', ['ngRoute']);
 
-.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/cmath', {
       templateUrl: 'views/cmath/cmath.html',
-      controller: 'CMathCtrl'
-  });
-}])
+      controller: 'cmathCtrl'
+    .otherwise({redirectTo: '/home'});
+}]);
 
-.controller('CMathCtrl', [ '$scope', function($scope) {
+app.controller('cmathCtrl', [ '$scope', function($scope) {
 
 }]);
+

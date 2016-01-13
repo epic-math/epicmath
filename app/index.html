@@ -28,13 +28,35 @@
 
 <header id="header">
   <div id="head" class="parallax" parallax-speed="2">
-    <h1 id="logo" class="text-center">
+    <h2 id="logo" class="text-center">
+      <!--
       <span class="title">Epic Math</span>
       <img class="img-circle" src="public/images/khong.jpg" alt="">
+
       <span class="name">K Hong</span>
+      
       <span class="tagline">A math lover<br>
         <a href="">epicmath2015@aol.com</a></span>
-    </h1>
+      -->
+
+      <!-- Google+ -->
+      <!-- Place this tag where you want the widget to render. -->
+      <div class="g-person" data-width="200" data-href="//plus.google.com/111664369941456137911" data-rel="author"></div>
+
+    </h2>
+
+
+
+    <div>
+      <!-- Place this tag after the last widget tag. -->
+      <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/platform.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+    </div>
   </div>
 
 
@@ -79,7 +101,7 @@
     <div class="row section featured topspace">
        <h2 class="section-title"></h2>
        <div ng-view>
-
+         <!-- placeholder for views-->
        </div> 
     </div>
 
@@ -101,7 +123,7 @@
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">College Math</h3>
           <p class="text-center">Differential equations, complex analysis, etc. </p>
-          <p class="text-center"><a href="#cmath" class="btn btn-action">Read more</a></p>
+          <p class="text-center"><a href="#/cmath" class="btn btn-action">Read more</a></p>
         </div>
         <div class="col-sm-6 col-md-3">
           <h3 class="text-center">SAT</h3>
@@ -120,9 +142,9 @@
 </main>
 
 
-<!--
+<!-- *********************************
 <div ng-view></div> 
--->
+************************************** -->
 
 <footer id="footer">
   <div class="container">
@@ -141,12 +163,25 @@
       <div class="col-md-3 widget">
         <h3 class="widget-title">Follow Epic Math</h3>
         <div class="widget-body">
-          <p class="follow-me-icons">
-            <a href=""><i class="fa fa-twitter fa-2"></i></a>
-            <a href=""><i class="fa fa-dribbble fa-2"></i></a>
-            <a href=""><i class="fa fa-github fa-2"></i></a>
-            <a href=""><i class="fa fa-facebook fa-2"></i></a>
-          </p>
+
+          <!--
+          <div class="follow-me-icons">
+            <a href="http://twitter.com/"><i class="fa fa-twitter fa-2"></i></a>
+            <a href="http://plus.google.com/"><i class="fa fa-google-plus fa-2"></i></a>
+            <a href="http://github.com/"><i class="fa fa-github fa-2"></i></a>
+            <a href="http://facebook.com/"><i class="fa fa-facebook fa-2"></i></a>
+            <a href="http://linkedin.com/"><i class="fa fa-linkedin fa-2"></i></a>
+          </div>
+          -->
+
+          <ul>
+            <li><a href="http://facebook.com/" target="_unknown"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://linkedin.com/" target="_unknown"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="http://twitter.com/" target="_unknown"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://plus.google.com/" target="_unknown"><i class="fa fa-google-plus"></i> </a></li>
+            <li><a href="https://github.com/epic-math/epicmath.git/" target="_unknown"><i class="fa fa-github"></i> </a></li>
+          </ul>
+
         </div>
       </div>
 
@@ -185,7 +220,7 @@
       <div class="col-md-6 widget">
         <div class="widget-body">
           <p class="text-right">
-            Copyright &copy; 2015, EpicMath<br> 
+            Copyright &copy; 2016, EpicMath<br> 
             Design: <a href="http://www.epicmath.com" rel="designer">Web Master</a> </p>
         </div>
       </div>
@@ -211,7 +246,7 @@
   <script src="views/not-taught/not-taught.js"></script>
   <script src="views/sidestory/sidestory.js"></script>
   <script src="views/sat/sat.js"></script>
-  <script src="views/cmath/cmath.js"></script>
+  <!--<script src="views/cmath/cmath.js"></script>-->
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

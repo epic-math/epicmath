@@ -7,7 +7,7 @@ angular.module('myApp.views.about', ['ngRoute'])
     .when('/about', {
       templateUrl: 'views/about/about.html',
       controller: 'AboutCtrl'
-  });
+    });
 }])
 
 .controller('AboutCtrl', [ '$scope', function($scope) {
