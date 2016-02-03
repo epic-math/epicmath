@@ -49,6 +49,8 @@ img {
   border-radius: 0;
   background-clip: padding-box;
   width: 100%;
+  /* navbar stick to the top at scroll-down */
+  position: fix; 
 }
 .navbar.stick {
   position: fixed;
@@ -82,12 +84,13 @@ img {
 .dropdown ul.dropdown-menu {
   top: 85%;
   text-align: left;
+
 }
 .dropdown ul.dropdown-menu > li > a {
   padding: 5px 30px;
 }
 .navbar-default {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   border-color: #cccccc;
 }
 .navbar-default .navbar-nav > li > a {
@@ -248,7 +251,7 @@ a:hover {
 **********************************************************************/
 #head {
   background: #f4f4f4 url(../images/fibo.jpg) top center;
-  background-size: 100% 50%;
+  background-size: 100% 100%;
   color: #7C7C7C;
   padding: 30px 0 35px 0;
 }
@@ -284,7 +287,7 @@ a:hover {
   color: #5E5E5E;
 }
 .home #head {
-  padding: 90px 0;
+  padding: 100px 30px 45px 30px;  /* TRBL */
 }
 .home #head .title {
   font-size: 49px;
@@ -831,7 +834,10 @@ footer.entry-meta .meta-in {
 
 
 ul {
-    overflow: auto;
+    /* disabled this : 
+    dropdown hidden by the container, 
+    and sidebar comes up - don't like it*/
+    /*overflow: auto;*/ 
 }
  
 ul li {

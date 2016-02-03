@@ -1,4 +1,3 @@
-
 // With strict mode, we cannot use undeclared variables
 'use strict';  
 
