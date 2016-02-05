@@ -8,7 +8,7 @@ angular.module('myApp.views.home', ['ngRoute'])
     .when('/home', {
       templateUrl: 'views/home/home.html',
       controller: 'homeCtrl'
-  });
+    });
 }])
 
 .controller('homeCtrl', [ '$scope', function($scope) {

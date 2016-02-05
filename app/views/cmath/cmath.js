@@ -1,16 +1,29 @@
 'use strict';
 
-var app = angular.module('myApp.views.cmath', ['ngRoute']);
+angular.module('myApp.views.cmath', ['ngRoute'])
 
-app.config(['$routeProvider', function($routeProvider) {
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider
+  
     .when('/cmath', {
       templateUrl: 'views/cmath/cmath.html',
       controller: 'cmathCtrl'
-    .otherwise({redirectTo: '/home'});
-}]);
+    })
 
-app.controller('cmathCtrl', [ '$scope', function($scope) {
+    .when('/cmath/algebra', {
+      templateUrl: 'views/cmath/algebra/algebra.html',
+      controller: 'cmathCtrl'
+    })
+
+    .when('/cmath/complex-variables', {
+      templateUrl: 'views/cmath/complex-variables/complex-variables.html',
+      controller: 'cmathCtrl'
+    })
+
+    .otherwise({redirectTo: '/home'});
+}])
+
+.controller('cmathCtrl', [ '$scope', function($scope) {
 
 }]);
 
