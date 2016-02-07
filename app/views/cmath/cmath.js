@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cmath', ['ngRoute'])
+angular.module('myApp.views.cmath', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider

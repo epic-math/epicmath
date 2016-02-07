@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('cmath.algebra', ['ngRoute']);
+var app = angular.module('myApp.views.cmath.algebra', ['ngRoute']);
 
 /*
 app.config(['$routeProvider', function($routeProvider) {

@@ -5,16 +5,16 @@
 var app = angular.module('myApp', [
   'ngRoute',
   //'myApp.views.about',
-  'about',
-  'home',
-  'view1',
-  'view2',
-  'view3',
-  'not-taught',
-  'cmath',
-  'sidestory',
-  'sat',
-  'version'
+  'myApp.views.about',
+  'myApp.views.home',
+  'myApp.views.view1',
+  'myApp.views.view2',
+  'myApp.views.view3',
+  'myApp.views.not-taught',
+  'myApp.views.cmath',
+  'myApp.views.sidestory',
+  'myApp.views.sat',
+  'myApp.version'
 ]);
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider

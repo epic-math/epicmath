@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sat', ['ngRoute'])
+angular.module('myApp.views.sat', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider

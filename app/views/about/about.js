@@ -1,7 +1,7 @@
 'use strict';
 
 //angular.module('myApp.views.about', ['ngRoute'])
-angular.module('about', [])
+angular.module('myApp.views.about', [])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider

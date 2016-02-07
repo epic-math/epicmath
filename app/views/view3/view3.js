@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('view3', ['ngRoute'])
+angular.module('myApp.views.view3', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
