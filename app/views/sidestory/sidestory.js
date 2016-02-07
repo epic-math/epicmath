@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.views.sidestory', ['ngRoute'])
+angular.module('sidestory', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider

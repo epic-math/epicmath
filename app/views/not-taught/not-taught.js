@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.views.not-taught', ['ngRoute'])
+angular.module('not-taught', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
