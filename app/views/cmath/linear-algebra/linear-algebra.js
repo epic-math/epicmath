@@ -9,7 +9,6 @@ angular.module('myApp.views.cmath.linear-algebra', ['ngRoute'])
       templateUrl: 'views/cmath/linear-algebra/linear-algebra.html',
       controller: 'linear-algebraCtrl'
     })
-*/
 
     .when('/cmath/linear-algebra/null-space', {
       templateUrl: 'views/cmath/linear-algebra/null-space/null-space.html',
@@ -17,6 +16,7 @@ angular.module('myApp.views.cmath.linear-algebra', ['ngRoute'])
     })
 
     .otherwise({redirectTo: '/cmath'});
+    */
 
 }])
 
