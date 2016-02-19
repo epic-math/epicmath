@@ -1,0 +1,79 @@
+
+<img src="/public/images/college-math/LinearAlgebra/LinearAlgebra.png" alt="LinearAlgebra.png">
+<br>
+<br>
+<p>So, to get the <b>Null</b> space of the linear system, we may want to decompose it into two parts:</p></p>
+<img src="/public/images/college-math/LinearAlgebra/CMath-Algebra-Eq-x-y-10.png" alt="CMath-Algebra-Eq-x-y-10.png">
+<img src="/public/images/college-math/LinearAlgebra/CMath-Algebra-Eq-x-y-0.png" alt="CMath-Algebra-Eq-x-y-0.png">&nbsp;&nbsp;&nbsp;&nbsp;(1)
+<br>
+<p>To use more fancy form (matrix), the original equation can be expressed by this:</p>
+<img src="/public/images/college-math/LinearAlgebra/matrix-form.png" alt="matrix-form.png">&nbsp;&nbsp;&nbsp;&nbsp;(2)
+<br>
+<p>The matrix [1 1/4] has two columns and it's a 1-dimensional matrix living in <img src="/public/images/college-math/LinearAlgebra/R1.png" alt="R1.png">
+<br>
+<p>Note that the columns are linear dependent since the first column is 4 times of the second column.</p>
+<img src="/public/images/college-math/LinearAlgebra/what-xy-could-be.png" alt="what-xy-could-be.png">
+<br>
+<br>
+<p>So, the <b>general</b> solution looks like this:</p>
+<img src="/public/images/college-math/LinearAlgebra/GeneralSolution.png" alt="GeneralSolution.png">&nbsp;&nbsp;&nbsp;&nbsp;(3)
+<br>
+<br>
+<p>The first matrix is the <b>particular</b> solution and the second matrix is the <b>null</b> space.</p>
+<p>As we know, the linear system has many solutions, we can get those from the general solution.</p>
+<p>For example, to make $10, we take 9 of $1 and 4 of $0.25, in which case the &alpha;=-1. Or we can take 0 of $1 and 40 of $0.25, in that case, the &alpha;=-10.</p>
+<p>Let's go back to the equation (1).</p>
+<p>The first equation is about the combination of (x,y) to make $10 while the 2nd equation is all about the combination of (x,y) to make 0. </p>
+<p>In that context, let's analyze the matrix form (Eq.2). The [1,1/4] consists of two column vectors, and it has very close relationship with the right hand side of matrix which is [10]. As we'll see later, for more complex linear system, we may see if the system has a solution or not by just analyzing the <b>column</b> spaces.</p>
+<p>The <b>null</b> space, on the other hand, is all about the relationships between column spaces rather than the right hand side matrix. As we can see, the <b>null</b> space we got was [1,-4], it tries to solve the 2nd equation of (1) whatever combination of (x,y). Actually, the ratio is 1:4 and to make it <b>0</b>, we need to make it cancel, and that's why we has 1 and minus -4.</p>
+<p>In summary, whenever we use <b>null</b> space, the <b>column</b> space comes up. However, they are totally different spaces in terms of their purpose. So, the more we focus on the similarities between the <b>null</b> space and the <b>column</b> space, the more we'll be comconfused. So, to grasp the clear concept of those two spaces, we should be more focused on the differences of the two:</p>
+<ol>
+  <li><b>null</b> space describes the relationship between column spaces but not interested in the RHS matrix.</li>
+  <li><b>column</b> space has direct links to RHS, and tries to match RHS matrix.</li>
+</ol> 
+<br />
+<br />
+<p>In terms of dimension:</p>
+<ol>
+  <li><b>null</b> space can have maximum dimension as many as the number of columns.
+  </li>
+  <li><b>column</b> space can have maximum of the number of rows of the matrix.
+  </li>
+</ol>
+<br>
+<p>Now, let's go deeper into <b>null</b> space. In the section for <a href="#/cmath/linear-algebra/null-space">Null Space</a>, we'll deal with a couple of quizes including the following 3 problems: finding <b>null</b> and <b>column</b> spaces:</p>
+<br>
+<br>
+<br>
+<p>Quiz # 1:</p>
+<img src="/public/images/college-math/LinearAlgebra/Null-space-quiz1.png" alt="Null-space-quiz1.png">
+<br>
+<br>
+<br>
+<br>
+<p>Quiz # 2:</p>
+<img src="/public/images/college-math/LinearAlgebra/Null-space-quiz2.png" alt="Null-space-quiz2.png">
+<br>
+<br>
+<br>
+<br>
+<p>Quiz # 3:</p>
+<img src="/public/images/college-math/LinearAlgebra/Null-space-quiz3.png" alt="Null-space-quiz3.png">
+<br>
+<br>
+<p>Take the challenge: 
+<a href="#/cmath/linear-algebra/null-space">Null Space</a></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="#/cmath/linear-algebra">Linear Algebra</a>
+<br>
+<a href="#/cmath/complex-variables">Complex Variables</a>
+<br>
+<a href="#/cmath">Back to CMath Home</a>
+<br>
+<a href="#/home">Back to Site Home</a>
+
+<script src="views/cmath/linear-algebra/null-space.js"></script>
