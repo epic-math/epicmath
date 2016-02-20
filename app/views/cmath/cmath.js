@@ -20,6 +20,11 @@ angular.module('myApp.views.cmath', ['ngRoute'])
       controller: 'linear-algebraCtrl'
     })
 
+    .when('/cmath/linear-algebra/null-space2', {
+      templateUrl: 'views/cmath/linear-algebra/null-space/null-space2.html',
+      controller: 'linear-algebraCtrl'
+    })
+
     .when('/cmath/complex-variables', {
       templateUrl: 'views/cmath/complex-variables/complex-variables.html',
       controller: 'cmathCtrl'

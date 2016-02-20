@@ -2,15 +2,15 @@
 <img src="/public/images/college-math/LinearAlgebra/LinearAlgebra.png" alt="LinearAlgebra.png">
 <br>
 <br>
-<p>So, to get the <b>Null</b> space of the linear system, we may want to decompose it into two parts:</p></p>
-<img src="/public/images/college-math/LinearAlgebra/CMath-Algebra-Eq-x-y-10.png" alt="CMath-Algebra-Eq-x-y-10.png">
-<img src="/public/images/college-math/LinearAlgebra/CMath-Algebra-Eq-x-y-0.png" alt="CMath-Algebra-Eq-x-y-0.png">&nbsp;&nbsp;&nbsp;&nbsp;(1)
+<p>So, to get the <b>null</b> space of the linear system, we may want to decompose it into two parts:</p></p>
+<img src="/public/images/college-math/LinearAlgebra/CMath-Algebra-Eq-x-y-10-0.png" alt="CMath-Algebra-Eq-x-y-10-0.png">
+&nbsp;&nbsp;&nbsp;&nbsp;(1)
 <br>
-<p>To use more fancy form (matrix), the original equation can be expressed by this:</p>
-<img src="/public/images/college-math/LinearAlgebra/matrix-form.png" alt="matrix-form.png">&nbsp;&nbsp;&nbsp;&nbsp;(2)
+<p>Using more fancy form (matrix), the original equation can be expressed by this:</p>
+<img src="/public/images/college-math/LinearAlgebra/matrix-form2.png" alt="matrix-form2.png">&nbsp;&nbsp;&nbsp;&nbsp;(2)
+<br>
 <br>
 <p>The matrix [1 1/4] has two columns and it's a 1-dimensional matrix living in <img src="/public/images/college-math/LinearAlgebra/R1.png" alt="R1.png">
-<br>
 <p>Note that the columns are linear dependent since the first column is 4 times of the second column.</p>
 <img src="/public/images/college-math/LinearAlgebra/what-xy-could-be.png" alt="what-xy-could-be.png">
 <br>
@@ -20,13 +20,17 @@
 <br>
 <br>
 <p>The first matrix is the <b>particular</b> solution and the second matrix is the <b>null</b> space.</p>
-<p>As we know, the linear system has many solutions, we can get those from the general solution.</p>
+<p>As we know, the equation has many solutions, and we can get those from the general solution.</p>
 <p>For example, to make $10, we take 9 of $1 and 4 of $0.25, in which case the &alpha;=-1. Or we can take 0 of $1 and 40 of $0.25, in that case, the &alpha;=-10.</p>
 <p>Let's go back to the equation (1).</p>
 <p>The first equation is about the combination of (x,y) to make $10 while the 2nd equation is all about the combination of (x,y) to make 0. </p>
-<p>In that context, let's analyze the matrix form (Eq.2). The [1,1/4] consists of two column vectors, and it has very close relationship with the right hand side of matrix which is [10]. As we'll see later, for more complex linear system, we may see if the system has a solution or not by just analyzing the <b>column</b> spaces.</p>
-<p>The <b>null</b> space, on the other hand, is all about the relationships between column spaces rather than the right hand side matrix. As we can see, the <b>null</b> space we got was [1,-4], it tries to solve the 2nd equation of (1) whatever combination of (x,y). Actually, the ratio is 1:4 and to make it <b>0</b>, we need to make it cancel, and that's why we has 1 and minus -4.</p>
-<p>In summary, whenever we use <b>null</b> space, the <b>column</b> space comes up. However, they are totally different spaces in terms of their purpose. So, the more we focus on the similarities between the <b>null</b> space and the <b>column</b> space, the more we'll be comconfused. So, to grasp the clear concept of those two spaces, we should be more focused on the differences of the two:</p>
+<p>In that context, let's analyze the matrix form (Eq.2).<br> 
+The [1,1/4] consists of two column vectors, and it has very close relationship with the right hand side of matrix which is [10].<br>
+As we'll see later, for more complex linear system, we may see if the system has a solution or not by just analyzing the <b>column</b> spaces.</p>
+<p>The <b>null</b> space, on the other hand, is all about the relationships between column spaces rather than the right hand side matrix. <br>
+As we can see, the <b>null</b> space we got was [1,-4], it tries to solve the 2nd equation of (1) whatever combination of (x,y). Actually, the ratio is 1:4 and to make it <b>0</b>, we need to make it cancel, and that's why we have 1 and minus -4.</p>
+<p>Whenever we use <b>null</b> space, the <b>column</b> space comes always up, which may trick us to think the two are similar. <br>
+So, the more we focus on the similarities between the <b>null</b> space and the <b>column</b> space, the more we'll be comconfused. However, they are totally different spaces in terms of their purposes, and to grasp the clear concept of those two spaces, we should be more focused on the differences of the two:</p>
 <ol>
   <li><b>null</b> space describes the relationship between column spaces but not interested in the RHS matrix.</li>
   <li><b>column</b> space has direct links to RHS, and tries to match RHS matrix.</li>
@@ -35,9 +39,9 @@
 <br />
 <p>In terms of dimension:</p>
 <ol>
-  <li><b>null</b> space can have maximum dimension as many as the number of columns.
+  <li><b>null</b> space can have maximum dimension as big as the number of columns of a matrix.
   </li>
-  <li><b>column</b> space can have maximum of the number of rows of the matrix.
+  <li><b>column</b> space can have maximum dimension as big as the number of rows of the matrix.
   </li>
 </ol>
 <br>
