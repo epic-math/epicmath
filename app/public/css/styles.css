@@ -399,6 +399,11 @@ img {
   ==> */
   font-size: 18px;
   font-size: 1.125rem;
+  /* there were no paddings */
+  padding-top: 0px;
+  padding-right: 7px;
+  padding-bottom: 0px;
+  padding-left: 7px;
 }
 
 .featured h3 {
