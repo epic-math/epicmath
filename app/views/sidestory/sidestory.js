@@ -10,7 +10,7 @@ angular.module('myApp.views.sidestory', ['ngRoute'])
     })
 
     .when('/sidestory/numberStory', {
-      templateUrl: 'views/sidestory/numberStory.html',
+      templateUrl: 'views/sidestory/numberStory/numberStory.html',
       controller: 'sidestoryCtrl'
     })
 
